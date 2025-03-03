@@ -3,6 +3,8 @@ import App from "../App.jsx";
 import Home from "../pages/Home.jsx";
 import About from "../pages/About.jsx";
 import Contact from "../pages/Contact.jsx";
+import BlogDetail from "../pages/BlogDetail.jsx";
+import NotFound from "../pages/NotFound.jsx";
 
 const Router = () => {
   return useRoutes([
@@ -23,6 +25,14 @@ const Router = () => {
           path: "/contact",
           element: <Contact />,
         },
+        {
+          path: "/blogs/:id",
+          element: <BlogDetail />
+        },
+        {
+          path: "*",
+          element: <NotFound />
+        }
       ],
     },
   ]);

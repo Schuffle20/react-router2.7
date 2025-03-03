@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "serve": "json-server -w src/database/db.json --port=3001",
     "lint": "eslint .",
     "preview": "vite preview"
   },
